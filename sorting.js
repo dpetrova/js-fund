@@ -19,8 +19,3 @@ console.log(strings); // ['abc', 'abc', 'äbc', 'nop', 'NOP', 'ñop']
 
 /* Sort Number Arrays */
 [0, 10, 4, 9, 123, 54, 1].sort((a, b) => a - b); // [0, 1, 4, 9, 10, 54, 123]
-
-/* Disable Right Click */
-<body oncontextmenu="return false">
-  <div></div>
-</body>;

@@ -112,5 +112,12 @@ function myFunc() {
   arguments[0]; // 34
   arguments[1]; // 89
 }
-
 myFunc(34, 89);
+
+// 11. Fuction returning function
+function outer() {
+  return function () {
+    return "Hi there!";
+  };
+}
+outer()(); //Hi there!

@@ -135,3 +135,18 @@ Lorem
 
 /* Progress */
 <progress value="67" max="100"></progress>
+
+/* Disable Right Click */
+<body oncontextmenu="return false">
+  <div></div>
+</body>;
+
+/* Get mouse position */
+//The user’s mouse position is stored in the clientX and clientY properties on the built-in MouseEvent object.
+document.addEventListener(type: 'mousemove', listener: (e: MouseEvent) => {
+  console.log(`Mouse X: ${e.clientX}, Mouse Y: ${e.clientY}`)
+})
+
+/* Simulate the browser’s “back” and “forward” buttons */
+<button onclick="window.history.back()">Back</button>
+<button onclick="window.history.forward()">Forward</button>
